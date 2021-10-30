@@ -9,6 +9,13 @@ module.exports = {
         include: /src/,
         use: {
           loader: "swc-loader",
+          options: {
+            jsc: {
+              parser: {
+                jsx: true,
+              },
+            },
+          },
         },
       },
     ],
